@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-ExamApp.Web-3f16b27e-dd83-46a2-a255-4cc1741d50d0</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\ExamApp.Data.Models\ExamApp.Data.Models.csproj" />
+    <ProjectReference Include="..\..\Data\ExamApp.Data\ExamApp.Data.csproj" />
+    <ProjectReference Include="..\..\Service\ExamApp.Service.Mapping\ExamApp.Service.Mapping.csproj" />
+    <ProjectReference Include="..\..\Service\ExamApp.Service.Models\ExamApp.Service.Models.csproj" />
+    <ProjectReference Include="..\..\Service\ExamApp.Service\ExamApp.Service.csproj" />
+    <ProjectReference Include="..\ExamApp.Web.Models\ExamApp.Web.Models.csproj" />
+  </ItemGroup>
+
+</Project>

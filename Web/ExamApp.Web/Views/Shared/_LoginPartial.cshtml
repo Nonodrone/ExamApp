@@ -1,0 +1,27 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using ExamApp.Data.Models
+
+@inject SignInManager<ExamAppUser> SignInManager
+@inject UserManager<ExamAppUser> UserManager
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/ExamApp.Web.styles.css" asp-append-version="true" />
+
+<ul class="navbar-items">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <li class="navbar-item">
+            <a class="navbar-link" asp-area="Identity" asp-page="/Account/Logout">Logout</a>
+        </li>
+    }
+    else
+    {
+        <li class="navbar-item">
+            <a class="navbar-link" asp-area="Identity" asp-page="/Account/Login">Login</a>
+        </li>
+        <li class="navbar-item">
+            <a class="navbar-link" asp-area="Identity" asp-page="/Account/Register">Register</a>
+        </li>
+    }
+</ul>

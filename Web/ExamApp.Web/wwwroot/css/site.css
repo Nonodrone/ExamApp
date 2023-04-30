@@ -1,0 +1,339 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+/*classes for the login and register forms*/
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+    .form-container h1 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 1em;
+        box-sizing: border-box;
+    }
+
+    .form-group button {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .form-group button:hover {
+            background-color: #3e8e41;
+        }
+
+    .form-group a {
+        display: block;
+        text-align: center;
+        font-size: 1em;
+        margin-top: 15px;
+    }
+
+/*classes for the admin panel*/
+.admin-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.admin-panel-sections {
+    flex-basis: 45%;
+}
+
+.admin-panel-sections-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.admin-panel-sections-content {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.admin-panel-sections-element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.admin-panel-sections-element-label {
+    font-size: 1.2rem;
+}
+
+.admin-panel-sections-element-actions button {
+    background-color: #eee;
+    border: none;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.admin-panel-categories {
+    flex-basis: 45%;
+}
+
+.admin-panel-categories-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.admin-panel-categories-content {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.admin-panel-categories-element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.admin-panel-categories-element-label {
+    font-size: 1.2rem;
+}
+
+.admin-panel-categories-element-actions button {
+    background-color: #eee;
+    border: none;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.admin-panel-create-button {
+    margin-top: 1rem;
+}
+
+.admin-panel-create-button-label {
+    background-color: #eee;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/*admin panel forms styles*/
+.form-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.form-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: green;
+    cursor: pointer;
+}
+
+    .form-button:hover {
+        background-color: darkgreen;
+    }
+
+
+.form-link {
+    color: blue;
+    text-decoration: none;
+}
+
+    .form-link:hover {
+        text-decoration: underline;
+    }
+
+/*Navbar in layout css*/
+.navbar-wrapper {
+    background-color: green;
+    padding: 10px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.navbar-toggle {
+    background-color: white;
+    border: none;
+}
+
+.navbar-toggle-icon {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+}
+
+.navbar-collapse-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-items {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item {
+    margin: 0 10px;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/*Home Page css*/
+.main-container-products {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.product-card-container {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border: 3px solid green;
+    border-radius: 1rem;
+    border-color: green;
+    overflow: hidden;
+    position: relative; /* add relative positioning */
+}
+
+    .product-card-container .img-container {
+        height: 60%; /* set height for image container */
+        overflow: hidden; /* hide overflow */
+    }
+
+    .product-card-container img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* use object-fit to fit image within container */
+    }
+
+    .product-card-container .product-info-container {
+        height: 40%; /* set height for product info container */
+        position: absolute; /* position info container */
+        bottom: 0; /* position at bottom of container */
+        left: 0; /* align info container with left side of container */
+        right: 0; /* align info container with right side of container */
+        padding: 10px;
+    }
+
+    .product-card-container h1 {
+        font-size: 1.2rem;
+        margin: 0 0 10px;
+    }
+
+    .product-card-container p {
+        font-size: 1rem;
+        margin: 0 0 10px;
+    }
+
+    .product-card-container a {
+        display: inline-block;
+        background-color: #008000;
+        color: #fff !important;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+
+        .product-card-container a:hover {
+            background-color: #006600;
+        }
+
+.product-info-container {
+    border: 2px solid green;
+}
